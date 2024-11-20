@@ -1,0 +1,197 @@
+body {
+    background-color: #f4f4f4;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+:root {
+    /* UI Color */
+    --primary-color: #15d086fd;
+    --secondary-color: #14b474fd;
+    --accent-color: #212434;
+
+    /* Button color */
+    --primary-color-light: #28e398fd;
+    --primary-color-darken: #19be7cfd;
+    --danger-color-light: #db2424fd;
+    --danger-color-darken: #b31f1ffd;
+}
+
+
+@media (max-width: 654px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-container .img-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.hero-wrapper {
+    width: 100%;
+    background-color: #FFF;
+    padding: 4.555rem;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.heading-container {
+    width: 70%;
+    margin: 20px;
+}
+
+.hero-welcome-container p {
+    font-size: 1.1rem;
+}
+
+.hero-name-container h2 {
+    color: rgba(21, 208, 134, 0.993);
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+.hero-detail-container h2 {
+    color: rgba(43, 83, 67, 85%);
+    font-size: 1.450rem;
+    font-weight: 500;
+}
+
+/* ACHIEVEMENT SAYA! */
+.hero-achievement-container {
+    margin-top: 16px;
+    padding-left: 4px;
+    /* border-left: 1px solid rgb(18, 20, 29, 50%); */
+}
+
+.hero-achievement-container button {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.hero-achievement-container span {
+    font-weight: 500;
+}
+
+.hero-achievement-container .hero-ach1, .hero-achievement-container .hero-ach2 {
+    padding: 2px;
+    font-size: 0.845em;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    border-radius: 20px;
+}
+
+.hero-achievement-container .hero-ach1::after, .hero-achievement-container .hero-ach2::after {
+    margin-left: 16px;
+    font-size: 1.1em;
+    color: rgb(253, 253, 253, 80%);
+    content: '×';
+}
+
+.hero-ach1 {
+    background-color: var(--primary-color-darken);
+    border: 3px solid var(--primary-color);
+    color: #fdfdfd;
+}
+
+.hero-ach2 {
+    margin-top: 8px;
+    background-color: var(--primary-color-darken);
+    border: 3px solid var(--primary-color);
+    color: #fdfdfd;
+    
+}
+
+.hero-ach1:hover {
+    background-color: #1adb8dfd;
+}
+
+/* .hero-ach2:hover {
+    background-color: ;
+} */
+
+.hero-quote-container {
+    margin-top: 10px;
+    color: rgba(43, 83, 67, 55%);
+    border-left: 1px solid rgb(18, 20, 29, 50%);
+    padding-left: 10px;
+    padding: 6px;
+    /* background-color: rgba(21, 208, 134, 4%); */
+}
+
+.hero-desc-container {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 60%);
+}
+
+.img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+/* BUTTON*/
+
+.hero-button-container {
+    margin-top: 24px;
+}
+
+/* Inisialisasi default */
+
+.hero-button-container .hero-contact, .hero-button-container .hero-overview {
+    padding: 0.9em 3em 0.9em 3em;
+    border-radius: 26px;
+    transition: 0.155s ease-in-out;
+}
+
+.hero-button-container {
+    display: flex;
+    column-gap: 18px;
+}
+
+/* STYLE HERO BUTTON BERBEDA */
+
+.hero-button-container .hero-contact {
+    color: #fff;
+    background-color: #15d086fd;
+}
+
+.hero-button-container .hero-overview {
+    color: #12141d;
+    background-color: #12141d00;
+    border: 1px solid #12141d;
+}
+
+/* HOVER STYLE HERO BUTTON BERBEDA */
+
+.hero-button-container .hero-contact:hover, .hero-button-container .hero-overview:hover {
+    cursor: pointer;
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+.hero-button-container .hero-contact:hover {
+    background-color: var(--primary-color-light);
+}
+
+.hero-button-container .hero-overview:hover {
+    color: #fdfdfd;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
