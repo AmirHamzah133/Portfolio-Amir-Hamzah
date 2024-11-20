@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap');
+
+
 body {
     background-color: #f6f6f6;
     height: 1080px;
@@ -6,8 +9,8 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     border: none;
@@ -45,7 +48,7 @@ body {
 
 @media (max-width: 601px) {
     .hero-achievement-container {
-        font-size: 0.755em;
+        font-size: 0.875em;
     }
 
     .hero-welcome-container p {
@@ -53,7 +56,7 @@ body {
     }
 
     .hero-button-container {
-        font-size: 0.755em;
+        font-size: 1.1em;
     }
 
     .hero-wrapper {
@@ -84,6 +87,10 @@ body {
   letter-spacing: 3.2px;
 }
 
+.logo-nav-kiri h1, .logo-nav-kiri span {
+    font-weight: 500;
+}
+
 .logo-kanan {
     display: none;
 }
@@ -105,7 +112,7 @@ body {
 }
 
 
-.icon-container {
+/* .icon-container {
   display: flex;
   flex-direction: row-reverse;
   gap: 12px;
@@ -127,7 +134,7 @@ body {
 .user-icon:hover {
   cursor: pointer;
   stroke: #8d8d8d;
-}
+} */
 
 .elemen-center {
   width: 100%;
@@ -204,7 +211,7 @@ nav ul {
     width: 100%;
     background-color: #FFF;
     padding: 0 7%;
-    padding-top: 8.555rem;
+    padding-top: 8.450rem;
 }
 
 .hero-container {
@@ -220,11 +227,13 @@ nav ul {
 
 .hero-welcome-container {
     font-size: 1.255rem;
+    font-weight: 400;
 }
 
 .hero-name-container h2 {
     color: rgba(21, 208, 134, 0.993);
-    font-size: 2.625rem;
+    font-size: 3.110rem;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -289,7 +298,7 @@ nav ul {
 }
 
 .hero-quote-container {
-    margin-top: 10px;
+    margin-top: 20px;
     color: rgba(43, 83, 67, 55%);
     border-left: 1px solid rgb(18, 20, 29, 50%);
     padding-left: 10px;
@@ -297,9 +306,17 @@ nav ul {
     /* background-color: rgba(21, 208, 134, 4%); */
 }
 
+.hero-quote-container p {
+     font-weight: 300;
+}
+
 .hero-desc-container {
-    margin-top: 10px;
+    margin-top: 14px;
     color: rgba(0, 0, 0, 55%);
+}
+
+.hero-desc-container p {
+     font-weight: 300;
 }
 
 .img-wrapper {
@@ -313,7 +330,7 @@ nav ul {
 /* BUTTON*/
 
 .hero-button-container {
-    margin-top: 24px;
+    margin-top: 26px;
 }
 
 /* Inisialisasi default */
