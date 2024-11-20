@@ -1,11 +1,12 @@
 body {
-    background-color: #f4f4f4;
+    background-color: #f6f6f6;
 }
 
 
 * {
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
     margin: 0;
     padding: 0;
     border: none;
@@ -33,14 +34,150 @@ body {
 
     .hero-container .img-wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 }
+
+@media (max-width: 647px) {
+    .logo-kanan svg {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 4em;
+    }
+    
+    .navbar ul li a {
+        display: none;
+    }
+}
+
+.logo-nav-kiri {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 3.2px;
+}
+
+.logo-kanan {
+    display: none;
+}
+
+.span-logo {
+    color: var(--secondary-color);
+    padding: 0;
+    /* background-color: rgb(45, 174, 99, 14%); */
+    border-radius: 24px;
+}
+
+.logo-kiri {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  /* column-gap: 10px; */
+  font-size: 1.1rem;
+}
+
+
+.icon-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+}
+
+.search-icon {
+  stroke: var(--primary-color);
+}
+
+.search-icon:hover {
+  cursor: pointer;
+  stroke: #8d8d8d;
+}
+
+.user-icon {
+  stroke: var(--primary-color);
+}
+
+.user-icon:hover {
+  cursor: pointer;
+  stroke: #8d8d8d;
+}
+
+.elemen-center {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+
+/* STYLE SEARCH BOX */
+.elemen-center input {
+  background-color: rgb(45, 174, 99, 2%);
+  border: 1px solid var(--primary-color);
+  padding: 4px 8px;
+  width: 60%;
+  padding: 10px 14px;
+  border-radius: 24px;
+}
+
+/* Penyesuaian navbar agar posisinya tetap fix ketika website discroll */
+.navbar {
+  padding: 1.6em 1em;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 1rem;
+  z-index: 999;
+  font-size: 0.9rem;
+  position: fixed;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.030);
+  /* background-color: rgb(255, 255, 255, 98%); */
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(32px);
+  /* mix-blend-mode: color-burn; */
+  border: 1px solid rgba(0, 0, 0, 0.080);
+}
+
+/* Memposisikan display list menu dari navbar menjadi sejajar dan flex-end */
+nav ul {
+    display: flex;
+    /* column-gap: 20px; */
+    list-style-type: none;
+    padding-left: 2em;
+    padding-right: 4em;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav li a {
+    display: block;
+    color: #303030;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  
+  .menu {
+    padding: 0.7em 1em;
+    border-radius: 8px;
+  }
+
+  /* Membuat animasi perubahan warna dan posisi saat dihover pada menu navigation bar agar lebih terasa dinamis dan interaktif*/
+  .menu:hover {
+    transform: translateY(2.5px);
+    color: var(--secondary-color);
+    background-color: rgb(13, 221, 148, 12%);
+    transition: ease-in-out 0.2s;
+  }
 
 .hero-wrapper {
     width: 100%;
     background-color: #FFF;
     padding: 4.555rem;
+    padding-top: 7.555rem;
 }
 
 .hero-container {
@@ -135,7 +272,7 @@ body {
 
 .hero-desc-container {
     margin-top: 10px;
-    color: rgba(0, 0, 0, 60%);
+    color: rgba(0, 0, 0, 55%);
 }
 
 .img-wrapper {
