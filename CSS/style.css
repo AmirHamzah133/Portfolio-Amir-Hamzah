@@ -52,11 +52,11 @@ body {
     }
 
     .hero-welcome-container p {
-        font-size: 1rem;
+        font-size: 1.055rem;
     }
 
     .hero-button-container {
-        font-size: 1.1em;
+        font-size: 0.855em;
     }
 
     .hero-wrapper {
@@ -69,13 +69,17 @@ body {
         padding: 1.5rem;
     }
 
-    .logo-kanan svg {
+    .hamburger-menu svg {
         display: flex;
         justify-content: flex-end;
         padding-right: 4em;
     }
     
-    .navbar ul li a {
+    .navbar li a {
+        display: none;
+    }
+
+    .hamburger-menu svg {
         display: none;
     }
 }
@@ -88,10 +92,10 @@ body {
 }
 
 .logo-nav-kiri h1, .logo-nav-kiri span {
-    font-weight: 500;
+    font-weight: 600;
 }
 
-.logo-kanan {
+.logo-kanan .hamburger-menu svg {
     display: none;
 }
 
@@ -210,7 +214,7 @@ nav ul {
 .hero-wrapper {
     width: 100%;
     background-color: #FFF;
-    padding: 0 7%;
+    padding: 0 5%;
     padding-top: 8.450rem;
 }
 
