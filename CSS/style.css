@@ -1,5 +1,6 @@
 body {
     background-color: #f6f6f6;
+    height: 1080px;
 }
 
 
@@ -36,9 +37,35 @@ body {
         display: flex;
         justify-content: flex-end;
     }
+
+    .hero-achievement-container {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 601px) {
+    .hero-achievement-container {
+        font-size: 0.755em;
+    }
+
+    .hero-welcome-container p {
+        font-size: 1rem;
+    }
+
+    .hero-button-container {
+        font-size: 0.755em;
+    }
+
+    .hero-wrapper {
+        padding: 0 5%;
+    }
 }
 
 @media (max-width: 647px) {
+    .hero-wrapper {
+        padding: 1.5rem;
+    }
+
     .logo-kanan svg {
         display: flex;
         justify-content: flex-end;
@@ -176,8 +203,8 @@ nav ul {
 .hero-wrapper {
     width: 100%;
     background-color: #FFF;
-    padding: 4.555rem;
-    padding-top: 7.555rem;
+    padding: 0 7%;
+    padding-top: 8.555rem;
 }
 
 .hero-container {
@@ -187,23 +214,23 @@ nav ul {
 }
 
 .heading-container {
-    width: 70%;
+    width: 85%;
     margin: 20px;
 }
 
-.hero-welcome-container p {
-    font-size: 1.1rem;
+.hero-welcome-container {
+    font-size: 1.255rem;
 }
 
 .hero-name-container h2 {
     color: rgba(21, 208, 134, 0.993);
-    font-size: 2.4rem;
+    font-size: 2.625rem;
     margin: 0;
 }
 
 .hero-detail-container h2 {
     color: rgba(43, 83, 67, 85%);
-    font-size: 1.450rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
 
@@ -229,7 +256,7 @@ nav ul {
     font-size: 0.845em;
     padding-right: 0.6rem;
     padding-left: 0.6rem;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .hero-achievement-container .hero-ach1::after, .hero-achievement-container .hero-ach2::after {
@@ -254,12 +281,12 @@ nav ul {
 }
 
 .hero-ach1:hover {
-    background-color: #1adb8dfd;
+    background-color: #1cce87fd;
 }
 
-/* .hero-ach2:hover {
-    background-color: ;
-} */
+.hero-ach2:hover {
+    background-color: #1cce87fd;
+}
 
 .hero-quote-container {
     margin-top: 10px;
@@ -278,9 +305,9 @@ nav ul {
 .img-wrapper {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: max-content;
     justify-content: flex-end;
-    margin: 20px;
+    margin: 26px;
 }
 
 /* BUTTON*/
@@ -295,6 +322,7 @@ nav ul {
     padding: 0.9em 3em 0.9em 3em;
     border-radius: 26px;
     transition: 0.155s ease-in-out;
+    font-size: 0.9em;
 }
 
 .hero-button-container {
