@@ -57,7 +57,7 @@ body {
     }
 
     .hero-welcome-container p {
-        font-size: 1.085rem;
+        font-size: 1.045rem;
     }
 
     .hero-button-container {
@@ -570,4 +570,36 @@ nav ul {
     max-width: 80%;
     font-size: 3.2rem;
     font-weight: bold;
+}
+
+.footer-wrapper {
+    width: 100%;
+    background-color: var(--accent-color);
+    padding: 1.6rem 4%;
+}
+
+.footer-container ul, .footer-container {
+    display: flex;
+    font-size: 0.735em;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 20px;
+    row-gap: 4px;
+    color: #fff;
+}
+
+.footer-container a {
+    color: var(--primary-color-light);
+}
+
+.footer-container ul::before, .footer-container ul::after {
+    content: '|';
+    color: rgb(255, 255, 255, 65%);
+}
+
+.footer-container h2 {
+    color: #fff;
+    font-size: 0.735em;
 }
