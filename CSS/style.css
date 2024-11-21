@@ -413,7 +413,7 @@ nav ul {
 
 /* ABOUT SECTION */
 .about-section-wrapper {
-    margin-top: 16px;
+    /* margin-top: 16px; */
     background-color: var(--accent-color);
 }
 
@@ -548,7 +548,7 @@ nav ul {
 
 /* ABOUT SECTION */
 .aboutme-content-wrapper {
-    margin-top: 16px;
+    /* margin-top: 16px; */
     width: 100%;
     background-color: #fff;
 }
