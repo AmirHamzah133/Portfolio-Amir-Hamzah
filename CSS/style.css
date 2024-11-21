@@ -14,6 +14,7 @@ body {
 * {
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    text-decoration: none;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -52,11 +53,11 @@ body {
 
 @media (max-width: 601px) {
     .hero-achievement-container {
-        font-size: 0.975em;
+        font-size: 0.950em;
     }
 
     .hero-welcome-container p {
-        font-size: 1.055rem;
+        font-size: 1.375rem;
     }
 
     .hero-button-container {
@@ -92,6 +93,10 @@ body {
 @media (max-width: 1106px) {
     .card-about-container {
         flex-wrap: wrap;
+    }
+
+    .button-about-container {
+        margin-top: 0;
     }
 }
 
@@ -227,7 +232,7 @@ nav ul {
 .hero-wrapper {
     width: 100%;
     background-color: #FFF;
-    padding: 0 5%;
+    padding: 0 4.5%;
     padding-top: 7.650rem;
     padding-bottom: 1rem;
 }
@@ -281,7 +286,7 @@ nav ul {
 
 .hero-achievement-container .hero-ach1, .hero-achievement-container .hero-ach2 {
     padding: 2px;
-    font-size: 0.845em;
+    font-size: 0.855em;
     padding-right: 0.6rem;
     padding-left: 0.6rem;
     border-radius: 50px;
@@ -538,4 +543,31 @@ nav ul {
 
 .button-about-container button:hover {
     cursor: pointer;
+}
+
+
+/* ABOUT SECTION */
+.aboutme-content-wrapper {
+    margin-top: 16px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.aboutme-content-container {
+    padding: 0 4.5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.heading-aboutme-container {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-aboutme-container h1, .heading-aboutme-container span {
+    text-align: center;
+    color: rgb(18, 20, 29, 90%);
+    max-width: 80%;
+    font-size: 3.2rem;
+    font-weight: bold;
 }
