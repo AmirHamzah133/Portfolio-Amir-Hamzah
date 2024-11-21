@@ -326,7 +326,7 @@ nav ul {
     border-left: 1px solid rgb(18, 20, 29, 50%);
     padding-left: 10px;
     padding: 6px;
-    /* background-color: rgba(21, 208, 134, 4%); */
+    background-color: rgba(21, 208, 134, 2%);
 }
 
 .hero-quote-container p {
@@ -335,11 +335,11 @@ nav ul {
 
 .hero-desc-container {
     margin-top: 14px;
-    color: rgba(0, 0, 0, 55%);
+    color: rgba(0, 0, 0, 45%);
 }
 
 .hero-desc-container p {
-     font-weight: 300;
+     font-weight: 400;
 }
 
 .img-wrapper {
@@ -417,6 +417,7 @@ nav ul {
 .about-heading h2 {
     color: var(--primary-color);
     text-align: center;
+    font-weight: bold;
 }
 
 .about-content-container {
@@ -466,8 +467,8 @@ nav ul {
 
 /* STYLE HEADING CARD! */
 .heading-about-container h2 {
-    color: var(--primary-color);
-    font-size: 1.2em;
+    color: var(--primary-color-darken);
+    font-size: 1.065em;
     font-weight: 600;
 }
 
@@ -476,7 +477,7 @@ nav ul {
     width: 100%;
     margin-top: 10px;
     text-align: center;
-    background-color: var(--primary-color-light);
+    /* background-color: var(--primary-color-light); */
 }
 
 /* DESKRIPSI CARD! */
