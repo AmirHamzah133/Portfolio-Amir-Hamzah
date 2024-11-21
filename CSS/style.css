@@ -22,7 +22,7 @@ body {
 
 :root {
     /* UI Color */
-    --primary-color: #15d086fd;
+    --primary-color: #15d085;
     --secondary-color: #14b474fd;
     --accent-color: #212434;
 
@@ -178,7 +178,6 @@ body {
   left: 0;
   right: 1rem;
   z-index: 999;
-  font-size: 0.9rem;
   position: fixed;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.030);
   /* background-color: rgb(255, 255, 255, 98%); */
@@ -197,6 +196,7 @@ nav ul {
     padding-right: 2em;
     justify-content: flex-end;
     align-items: center;
+    font-size: 0.950rem;
   }
 
   nav ul li a {
@@ -285,6 +285,10 @@ nav ul {
     padding-right: 0.6rem;
     padding-left: 0.6rem;
     border-radius: 50px;
+}
+
+.hero-achievement-container .hero-ach1:hover, .hero-achievement-container .hero-ach2:hover {
+    cursor: pointer;
 }
 
 .hero-achievement-container .hero-ach1::after, .hero-achievement-container .hero-ach2::after {
@@ -404,7 +408,7 @@ nav ul {
 
 /* ABOUT SECTION */
 .about-section-wrapper {
-    margin-top: 10px;
+    margin-top: 16px;
     background-color: var(--accent-color);
 }
 
@@ -431,7 +435,8 @@ nav ul {
 
 .card-about-container {
     display: flex;
-    gap: 40px;
+    row-gap: 40px;
+    column-gap: 30px;
 }
 
 /* PEMBUNGKUS CARD! */
@@ -450,6 +455,15 @@ nav ul {
     width: 100%;
     background-color: #f5f5f5;
     border-radius: 12px;
+    filter: brightness(98%);
+    transition: 200ms ease-in-out;
+}
+
+.card-about-container .card1-about:hover, .card-about-container .card2-about:hover, .card-about-container .card3-about:hover, .card-about-container .card4-about:hover {
+    filter: brightness(105%);
+    /* box-shadow: 0px 0px 20px 0px rgba(143, 255, 166, 0.3); */
+    cursor: pointer;
+    transform: translateY(6.5px);
 }
 
 /* PEMBUNGKUS KONTEN CARD! */
@@ -480,11 +494,37 @@ nav ul {
     /* background-color: var(--primary-color-light); */
 }
 
+.about-description-container h2 {
+    color: var(--primary-color-darken);
+    font-size: 0.955rem;
+}
+
 /* DESKRIPSI CARD! */
 .about-description-container {
-    margin-top: 14px;
+    margin-top: 10px;
     padding: 0 10px 0 10px;
     font-size: 0.8rem;
     font-weight: 300;
     color: rgba(0, 0, 0, 40%);
+}
+
+.button-about-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 0 6px 0 6px;
+    width: 100%;
+}
+
+.button-about-container button {
+    padding: 8px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: var(--primary-color-darken);
+    border-radius: 12px;
+}
+
+.button-about-container button:hover {
+    cursor: pointer;
 }
