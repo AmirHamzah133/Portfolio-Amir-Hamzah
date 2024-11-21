@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&display=swap');
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f6f6f6;
     height: 1080px;
@@ -42,13 +46,13 @@ body {
     }
 
     .hero-achievement-container {
-        font-size: 0.9em;
+        font-size: 1.020em;
     }
 }
 
 @media (max-width: 601px) {
     .hero-achievement-container {
-        font-size: 0.875em;
+        font-size: 0.975em;
     }
 
     .hero-welcome-container p {
@@ -56,7 +60,7 @@ body {
     }
 
     .hero-button-container {
-        font-size: 0.855em;
+        font-size: 0.955em;
     }
 
     .hero-wrapper {
@@ -69,10 +73,10 @@ body {
         padding: 1.5rem;
     }
 
-    .hamburger-menu svg {
+    .logo-kanan .hamburger-menu {
         display: flex;
         justify-content: flex-end;
-        padding-right: 4em;
+        /* padding-right: 4em; */
     }
     
     .navbar li a {
@@ -95,7 +99,7 @@ body {
     font-weight: 600;
 }
 
-.logo-kanan .hamburger-menu svg {
+.logo-kanan-wrapper {
     display: none;
 }
 
@@ -183,12 +187,12 @@ nav ul {
     /* column-gap: 20px; */
     list-style-type: none;
     padding-left: 2em;
-    padding-right: 4em;
+    padding-right: 2em;
     justify-content: flex-end;
     align-items: center;
   }
 
-  nav li a {
+  nav ul li a {
     display: block;
     color: #303030;
     font-weight: 400;
@@ -196,7 +200,6 @@ nav ul {
     padding: 1rem;
     text-decoration: none;
   }
-
   
   .menu {
     padding: 0.7em 1em;
@@ -211,11 +214,15 @@ nav ul {
     transition: ease-in-out 0.2s;
   }
 
+
+  /* HERO SECTION!!! */
+
 .hero-wrapper {
     width: 100%;
     background-color: #FFF;
     padding: 0 5%;
-    padding-top: 8.450rem;
+    padding-top: 7.650rem;
+    padding-bottom: 1rem;
 }
 
 .hero-container {
@@ -273,7 +280,7 @@ nav ul {
 }
 
 .hero-achievement-container .hero-ach1::after, .hero-achievement-container .hero-ach2::after {
-    margin-left: 16px;
+    margin-left: 12px;
     font-size: 1.1em;
     color: rgb(253, 253, 253, 80%);
     content: '×';
@@ -291,6 +298,10 @@ nav ul {
     border: 3px solid var(--primary-color);
     color: #fdfdfd;
     
+}
+
+.hero-ach2 .gelar {
+    font-style: italic;
 }
 
 .hero-ach1:hover {
@@ -368,8 +379,8 @@ nav ul {
 
 .hero-button-container .hero-contact:hover, .hero-button-container .hero-overview:hover {
     cursor: pointer;
-    padding-right: 4em;
-    padding-left: 4em;
+    /* padding-right: 4em;
+    padding-left: 4em; */
 }
 
 .hero-button-container .hero-contact:hover {
@@ -380,4 +391,90 @@ nav ul {
     color: #fdfdfd;
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+
+
+/* ABOUT SECTION */
+.about-section-wrapper {
+    margin-top: 10px;
+    background-color: var(--accent-color);
+}
+
+.about-section-container {
+    padding: 2em 7%;
+    padding-bottom: 3em;
+}
+
+/* STYLE FONT HEADING SECTION! */
+.about-heading h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.about-content-container {
+    width: 100%;
+}
+
+/* PEMBUNGKUS BUNGKUS CARD! */
+.card-about-wrapper {
+    margin-top: 2.9rem;
+}
+
+.card-about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* PEMBUNGKUS CARD! */
+.card-about-container .card1-about, .card-about-container .card2-about, .card-about-container .card3-about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 12px;
+    width: 100%;
+    outline: 1px solid rgb(255, 255, 255, 26%);
+
+}
+
+/* STYLE CARD */
+.card-about-container .card1-about, .card-about-container .card2-about, .card-about-container .card3-about {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+/* PEMBUNGKUS KONTEN CARD! */
+.about-heading-content-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+/* STYLE HEADING CARD! */
+.heading-about-container h2 {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* PEMBUNGKUS GAMBAR! */
+.img-heading-container img {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--primary-color-light);
+}
+
+/* DESKRIPSI CARD! */
+.about-description-container {
+    margin-top: 14px;
+    padding: 0 10px 0 10px;
+    font-size: 0.9rem;
 }
