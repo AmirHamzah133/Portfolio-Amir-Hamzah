@@ -422,6 +422,7 @@ nav ul {
     color: var(--primary-color);
     text-align: center;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .about-content-container {
@@ -430,13 +431,14 @@ nav ul {
 
 /* PEMBUNGKUS BUNGKUS CARD! */
 .card-about-wrapper {
-    margin-top: 2.9rem;
+    margin-top: 3rem;
 }
 
 .card-about-container {
     display: flex;
     row-gap: 40px;
     column-gap: 30px;
+    align-items: center;
 }
 
 /* PEMBUNGKUS CARD! */
@@ -444,23 +446,24 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 12px;
+    margin: 0 8px;
     width: 100%;
-    outline: 1px solid rgb(255, 255, 255, 26%);
+    outline: 1px solid rgb(255, 255, 255, 16%);
 
 }
 
 /* STYLE CARD */
 .card-about-container .card1-about, .card-about-container .card2-about, .card-about-container .card3-about, .card-about-container .card4-about {
     width: 100%;
-    background-color: #f5f5f5;
-    border-radius: 12px;
-    filter: brightness(98%);
+    background-color: #292c3d;
+    border-radius: 14px;
+    /* filter: brightness(100%); */
     transition: 200ms ease-in-out;
 }
 
 .card-about-container .card1-about:hover, .card-about-container .card2-about:hover, .card-about-container .card3-about:hover, .card-about-container .card4-about:hover {
-    filter: brightness(105%);
+    background-color: #2f3244;
+    /* filter: brightness(112%); */
     /* box-shadow: 0px 0px 20px 0px rgba(143, 255, 166, 0.3); */
     cursor: pointer;
     transform: translateY(6.5px);
@@ -481,31 +484,39 @@ nav ul {
 
 /* STYLE HEADING CARD! */
 .heading-about-container h2 {
-    color: var(--primary-color-darken);
-    font-size: 1.065em;
+    color: var(--primary-color-light);
+    font-size: 1.055em;
     font-weight: 600;
 }
 
 /* PEMBUNGKUS GAMBAR! */
 .img-heading-container img {
+    background-size: cover;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 12px;
     text-align: center;
     /* background-color: var(--primary-color-light); */
 }
 
 .about-description-container h2 {
-    color: var(--primary-color-darken);
-    font-size: 0.955rem;
+    color: rgb(255, 255, 255, 90%);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* DESKRIPSI CARD! */
 .about-description-container {
     margin-top: 10px;
+    height: 128px;
     padding: 0 10px 0 10px;
     font-size: 0.8rem;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 40%);
+    color: rgba(84, 255, 215, 75%);
+    overflow: auto;
+}
+
+.about-description-container p {
+    font-weight: 200;
+    margin-top: 8px;
 }
 
 .button-about-container {
@@ -513,7 +524,7 @@ nav ul {
     justify-content: center;
     margin-top: 16px;
     padding: 0 6px 0 6px;
-    width: 100%;
+    width: 90%;
 }
 
 .button-about-container button {
@@ -522,7 +533,7 @@ nav ul {
     color: #fff;
     text-align: center;
     background-color: var(--primary-color-darken);
-    border-radius: 12px;
+    border-radius: 30px;
 }
 
 .button-about-container button:hover {
