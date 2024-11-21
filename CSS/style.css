@@ -66,13 +66,14 @@ body {
     .hero-wrapper {
         padding: 0 5%;
     }
+
 }
 
 @media (max-width: 647px) {
     .hero-wrapper {
         padding: 1.5rem;
     }
-
+    
     .logo-kanan .hamburger-menu {
         display: flex;
         justify-content: flex-end;
@@ -83,8 +84,14 @@ body {
         display: none;
     }
 
-    .hamburger-menu svg {
-        display: none;
+    .hamburger-menu {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1106px) {
+    .card-about-container {
+        flex-wrap: wrap;
     }
 }
 
@@ -100,7 +107,7 @@ body {
 }
 
 .logo-kanan-wrapper {
-    display: none;
+    visibility: hidden;
 }
 
 .span-logo {
@@ -232,7 +239,7 @@ nav ul {
 }
 
 .heading-container {
-    width: 85%;
+    width: 90%;
     margin: 20px;
 }
 
@@ -256,6 +263,7 @@ nav ul {
 
 /* ACHIEVEMENT SAYA! */
 .hero-achievement-container {
+    max-width: 85%;
     margin-top: 16px;
     padding-left: 4px;
     /* border-left: 1px solid rgb(18, 20, 29, 50%); */
@@ -314,7 +322,7 @@ nav ul {
 
 .hero-quote-container {
     margin-top: 20px;
-    color: rgba(43, 83, 67, 55%);
+    color: rgba(43, 83, 67, 45%);
     border-left: 1px solid rgb(18, 20, 29, 50%);
     padding-left: 10px;
     padding: 6px;
@@ -422,12 +430,11 @@ nav ul {
 
 .card-about-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
 }
 
 /* PEMBUNGKUS CARD! */
-.card-about-container .card1-about, .card-about-container .card2-about, .card-about-container .card3-about{
+.card-about-container .card1-about, .card-about-container .card2-about, .card-about-container .card3-about, .card-about-container .card4-about{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -438,7 +445,7 @@ nav ul {
 }
 
 /* STYLE CARD */
-.card-about-container .card1-about, .card-about-container .card2-about, .card-about-container .card3-about {
+.card-about-container .card1-about, .card-about-container .card2-about, .card-about-container .card3-about, .card-about-container .card4-about {
     width: 100%;
     background-color: #f5f5f5;
     border-radius: 12px;
@@ -476,5 +483,7 @@ nav ul {
 .about-description-container {
     margin-top: 14px;
     padding: 0 10px 0 10px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 40%);
 }
