@@ -652,12 +652,13 @@ nav ul {
 .gallery-content-wrapper {
     /* margin-top: 20px; */
     margin-bottom: 20px;
+    padding-bottom: 1.6rem;
     width: 100%;
     background-color: var(--accent-color);
 }
 
 .gallery-content-container {
-    padding: 2rem 6%;
+    padding: 2rem 3%;
 }
 
 
