@@ -234,7 +234,7 @@ nav ul {
     background-color: #FFF;
     padding: 0 4.5%;
     padding-top: 7.650rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
 }
 
 .hero-container {
@@ -418,8 +418,8 @@ nav ul {
 }
 
 .about-section-container {
-    padding: 2em 7%;
-    padding-bottom: 3em;
+    padding: 3em 7%;
+    padding-bottom: 4.5em;
 }
 
 /* STYLE FONT HEADING SECTION! */
@@ -427,7 +427,8 @@ nav ul {
     color: var(--primary-color);
     text-align: center;
     font-weight: bold;
-    margin-top: 10px;
+    font-size: 2.155rem;
+    /* margin-top: 10px; */
 }
 
 .about-content-container {
@@ -436,7 +437,7 @@ nav ul {
 
 /* PEMBUNGKUS BUNGKUS CARD! */
 .card-about-wrapper {
-    margin-top: 3rem;
+    margin-top: 2.6rem;
 }
 
 .card-about-container {
@@ -444,6 +445,12 @@ nav ul {
     row-gap: 40px;
     column-gap: 30px;
     align-items: center;
+}
+
+.card-about-container {
+    border-top: 1px solid rgba(255, 255, 255, 12%);
+    padding: 2.4rem 0 0 0;
+
 }
 
 /* PEMBUNGKUS CARD! */
@@ -509,6 +516,7 @@ nav ul {
     font-weight: 400;
 }
 
+
 /* DESKRIPSI CARD! */
 .about-description-container {
     margin-top: 10px;
@@ -546,17 +554,36 @@ nav ul {
 }
 
 
-/* ABOUT SECTION */
-.aboutme-content-wrapper {
-    /* margin-top: 16px; */
-    width: 100%;
-    background-color: #fff;
+/* PROFILE SECTION! */
+.profile-wrapper {
+    background-color: #FFF;
 }
 
-.aboutme-content-container {
-    padding: 0 4.5%;
-    padding-top: 3rem;
+.profile-container {
+    padding: 1rem 5%;
     padding-bottom: 3rem;
+}
+
+.profile-heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-heading-container h2 {
+    font-size: 2rem;
+    color: var(--primary-color-darken);
+    font-weight: bold;
+    margin-top: 1.4rem;
+}
+
+.article-container {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-desc-container {
+    margin-top: 1.6rem;
 }
 
 .heading-aboutme-container {
@@ -564,13 +591,50 @@ nav ul {
     justify-content: center;
 }
 
-.heading-aboutme-container h1, .heading-aboutme-container span {
+.heading-aboutme-container h2, .heading-aboutme-container span {
     text-align: center;
     color: rgb(18, 20, 29, 90%);
-    max-width: 80%;
-    font-size: 3.2rem;
+    max-width: 100%;
+    font-size: 2.8rem;
     font-weight: bold;
 }
+
+.profile-desc-arc-container {
+    margin-top: 2rem;
+}
+
+.profile-desc-arc-container .article-desc {
+    color: rgb(18, 20, 29, 40%);
+    text-align: justify;
+}
+
+.quotes-atomic-habits-container {
+    margin-top: 20px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 4px 6px 6px 4px;
+    padding: 6px 10px 6px 10px;
+    border-left: 4px solid var(--primary-color-darken);
+    background-color: rgba(21, 208, 134, 3%);
+}
+
+.quotes-atomic-habits-container .title-quote {
+    color: var(--primary-color-darken);
+}
+
+.quotes-atomic-habits-container p {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* BAGIAN AKHIR */
+
 
 .footer-wrapper {
     width: 100%;
@@ -603,3 +667,7 @@ nav ul {
     color: #fff;
     font-size: 0.735em;
 }
+
+
+
+/*  */
