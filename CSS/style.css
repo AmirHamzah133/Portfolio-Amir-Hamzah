@@ -74,6 +74,10 @@ body {
     .hero-wrapper {
         padding: 1.5rem;
     }
+
+    .navbar ul {
+        padding-right: 2em;
+    }
     
     .logo-kanan .hamburger-menu {
         display: flex;
@@ -206,7 +210,7 @@ nav ul {
     /* column-gap: 20px; */
     list-style-type: none;
     padding-left: 2em;
-    padding-right: 2em;
+    /* padding-right: 0.5em; */
     justify-content: flex-end;
     align-items: center;
     font-size: 0.950rem;
@@ -654,7 +658,6 @@ nav ul {
 
 .gallery-content-container {
     padding: 2rem 6%;
-    padding-bottom: 3rem;
 }
 
 
