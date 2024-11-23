@@ -49,6 +49,13 @@ body {
     .hero-achievement-container {
         font-size: 1.020em;
     }
+
+}
+
+@media (max-width: 708px) {
+    .img-cert-container {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 601px) {
@@ -610,16 +617,28 @@ nav ul {
     justify-content: center;
 }
 
+.heading-profile-main, .heading-profile-main2 {
+    margin-top: 20px;
+    padding-top: 18px;
+    padding-bottom: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 10%);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 10%); */
+}
+
+.heading-profile-main2{
+    margin-top: 2rem;
+}
+
 .heading-aboutme-container h2, .heading-aboutme-container span {
     text-align: center;
     color: rgb(18, 20, 29, 90%);
     max-width: 100%;
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .profile-desc-arc-container {
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .profile-desc-arc-container .article-desc {
@@ -627,9 +646,10 @@ nav ul {
     text-align: justify;
 }
 
+
 .quotes-atomic-habits-container {
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
     border-radius: 4px 6px 6px 4px;
     padding: 6px 10px 6px 10px;
@@ -647,6 +667,33 @@ nav ul {
     font-weight: 300;
 }
 
+.img-cert-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-cert-container {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    background-color: rgb(41, 44, 61, 90%);
+    border: 1px solid rgba(0, 0, 0, 6%);
+    display: flex;
+    gap: 14px;
+    justify-content: flex-start;
+}
+
+.img-cert-container img {
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 60%);
+    overflow: auto;
+}
+
 
 /* GALLERY SECTION */
 .gallery-content-wrapper {
@@ -658,13 +705,13 @@ nav ul {
 }
 
 .gallery-content-container {
-    padding: 2rem 3%;
+    padding: 2rem 2%;
 }
 
 
 .gallery-heading-container h2 {
     text-align: center;
-    font-size: 2.155rem;
+    font-size: 2.055rem;
     font-weight: bold;
     color: var(--primary-color-light);
 }
@@ -674,7 +721,7 @@ nav ul {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    padding: 0 5%;
+    padding: 0 2%;
 }
 
 .img-capture-content-wrapper {
@@ -682,7 +729,7 @@ nav ul {
     justify-content: center;
     column-gap: 30px;
     row-gap: 20px;
-    width: 85%;
+    width: 90%;
 }
 
 .img-capture-content-container {
