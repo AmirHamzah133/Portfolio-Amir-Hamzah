@@ -10,6 +10,11 @@ body {
     height: 1080px;
 }
 
+button, a, img, svg {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 
 * {
     box-sizing: border-box;
@@ -590,16 +595,30 @@ nav ul {
     padding-bottom: 3rem;
 }
 
+.img-logo-amr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo-amr-container img {
+    background-size: cover;
+    width: 42px;
+} 
+
 .profile-heading-container {
     display: flex;
     justify-content: center;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    margin-top: 1.4rem;
+    gap: 10px;
 }
 
 .profile-heading-container h2 {
     font-size: 2rem;
     color: var(--primary-color-darken);
     font-weight: bold;
-    margin-top: 1.4rem;
 }
 
 .article-container {
@@ -668,6 +687,8 @@ nav ul {
 }
 
 .img-cert-wrapper {
+    user-select: none;
+    -webkit-user-drag: none;
     width: 100%;
     margin-top: 2rem;
     display: flex;
@@ -677,6 +698,7 @@ nav ul {
 
 .img-cert-container {
     width: 100%;
+    user-select: none;
     padding: 14px;
     border-radius: 14px;
     background-color: rgb(41, 44, 61, 90%);
@@ -688,6 +710,7 @@ nav ul {
 
 .img-cert-container img {
     width: 100%;
+    user-select: none;
     background-size: cover;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 60%);
@@ -765,6 +788,8 @@ nav ul {
 }
 
 .img-capture-container img {
+    user-select: none;
+    -webkit-user-drag: none;
     background-size: cover;
     width: 100%;
 }
